@@ -51,6 +51,12 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "GitHub-Page": {
+              "outputPath": {
+                "base": "docs",
+                "browser": ""
+              }
             }
           },
           "defaultConfiguration": "production"
