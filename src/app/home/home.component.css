@@ -4,12 +4,12 @@
   }
 
   .header-image{
-    background-image: url('/chandan_icon.jpg');
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/chandan_icon.jpg');
     background-size: cover;
   }
 
   .cover-image{
-    background-image: url('/chandan_icon.jpg');
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/chandan_icon.jpg');
     background-size: cover;
     height:220px;
     width:220px;
