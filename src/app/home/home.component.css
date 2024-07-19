@@ -1,8 +1,3 @@
-.example-card {
-    height: 300px;
-    width:100%;
-  }
-
   .header-image{
     background-image: url('https://shanbhagchandan.github.io/Portfolio/chandan_icon.jpg');
     background-size: cover;
@@ -11,8 +6,17 @@
   .cover-image{
     background-image: url('https://shanbhagchandan.github.io/Portfolio/chandan_icon.jpg');
     background-size: cover;
-    height:220px;
-    width:220px;
+    height:190px;
+    width:190px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .custom-cards{
+    width:95%;
+  }
+
+  .row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
