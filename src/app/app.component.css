@@ -1,0 +1,12 @@
+.row{
+    margin-bottom: 10px;
+}
+
+.container{
+    padding:5px;
+}
+
+.align-center{
+    margin-left: auto;
+    margin-right: auto;
+}
