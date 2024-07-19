@@ -1,64 +1,229 @@
-<mat-grid-list cols="4" rowHeight="100px">
-    <mat-grid-tile [colspan]="1" [rowspan]="3">
-        <mat-card class="example-card">
-            <mat-card-header> 
-              <div mat-card-avatar class="header-image"></div>
-              <mat-card-title>Chandan Achut Shanbhag</mat-card-title>
-              <mat-card-subtitle>Senior Software Engineer</mat-card-subtitle>
-            </mat-card-header>
-            <!-- <img mat-card-image src="/chandan.jpg" alt="Photo of chandan" style="height:230px;"> -->
-            <div mat-card-avatar class="cover-image"></div>
-          </mat-card>
-    </mat-grid-tile>  
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile>  
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        main
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 1
-    </mat-grid-tile>  
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 2
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 3
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 4
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 5
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 6
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 7
-    </mat-grid-tile> 
-    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-        tile 8
-    </mat-grid-tile>       
-</mat-grid-list>
+<div class="row">
+    <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <mat-card>
+                <mat-card-header> 
+                    <div mat-card-avatar>
+                        <button mat-mini-fab>
+                            <mat-icon>account_circle</mat-icon>
+                        </button>
+                    </div>
+                  <mat-card-title>Chandan Achut Shanbhag</mat-card-title>
+                  <mat-card-subtitle>Senior Software Engineer</mat-card-subtitle>
+                </mat-card-header>
+                <div mat-card-avatar class="cover-image"></div>
+            </mat-card>
+        </mat-grid-tile>  
+        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>email</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Email</mat-card-title>
+                  <mat-card-subtitle>chandanshanbhag217&#64;gmail.com</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile>  
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>call</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Phone Number</mat-card-title>
+                  <mat-card-subtitle>9886497754</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>location_on</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Location</mat-card-title>
+                  <mat-card-subtitle>Bengaluru</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>verified_user</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Linked In</mat-card-title>
+                  <mat-card-subtitle><a href="https://www.linkedin.com/in/chandan-shanbhag-b315bb189/" target="_blank">Chandan Shanbhag</a></mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>business</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>IT Experience</mat-card-title>
+                  <mat-card-subtitle>5-6 Years</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>language</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Languages</mat-card-title>
+                  <mat-card-subtitle>Kannada, Konkani, English, Hindi</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>palette</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Hobbies</mat-card-title>
+                  <mat-card-subtitle>Cricket, Movies, Sudoko</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>cake</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Date of Birth</mat-card-title>
+                  <mat-card-subtitle>22-March-1996</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile> 
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-card class="custom-cards">
+                <mat-card-header> 
+                  <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>save</mat-icon>
+                    </button>
+                  </div>
+                  <mat-card-title>Resume</mat-card-title>
+                  <mat-card-subtitle><a href="/">PDF</a><span> </span><a href="/">DOC</a></mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile>      
+    </mat-grid-list>
+</div>
+<div class="row">
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Professional Overview </mat-panel-title>
+          <mat-panel-description>
+            .Net full Stack developer with experience in azure cloud services and angular.
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+            <mat-grid-list cols="3" rowHeight="100px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                          <div mat-card-avatar>
+                            <button mat-mini-fab>
+                                <mat-icon>save</mat-icon>
+                            </button>
+                          </div>
+                          <mat-card-title>Professional Summary</mat-card-title>
+                          <mat-card-subtitle>Brief professional summary in IT industry</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile>  
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                          <div mat-card-avatar>
+                            <button mat-mini-fab>
+                                <mat-icon>save</mat-icon>
+                            </button>
+                          </div>
+                          <mat-card-title>Skills</mat-card-title>
+                          <mat-card-subtitle>Technology implementation and experiences</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                          <div mat-card-avatar>
+                            <button mat-mini-fab>
+                                <mat-icon>save</mat-icon>
+                            </button>
+                          </div>
+                          <mat-card-title>Education</mat-card-title>
+                          <mat-card-subtitle>Educational background and path</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                          <div mat-card-avatar>
+                            <button mat-mini-fab>
+                                <mat-icon>save</mat-icon>
+                            </button>
+                          </div>
+                          <mat-card-title>Experience</mat-card-title>
+                          <mat-card-subtitle>Experience and journey in IT industry</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                          <div mat-card-avatar>
+                            <button mat-mini-fab>
+                                <mat-icon>save</mat-icon>
+                            </button>
+                          </div>
+                          <mat-card-title>Certifications</mat-card-title>
+                          <mat-card-subtitle>Completed and ongoing certifications</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                          <div mat-card-avatar>
+                            <button mat-mini-fab>
+                                <mat-icon>save</mat-icon>
+                            </button>
+                          </div>
+                          <mat-card-title>Projects</mat-card-title>
+                          <mat-card-subtitle>Worked on projects and POC</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+            </mat-grid-list>
+        </div>
+    </mat-expansion-panel>
+</div>
+
+
