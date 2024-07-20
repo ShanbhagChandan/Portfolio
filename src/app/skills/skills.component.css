@@ -1,0 +1,39 @@
+.cover-image{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/chandan_icon.jpg');
+    background-size: cover;
+    height:190px;
+    width:190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-cards{
+    width:95%;
+    height:95%;
+}
+
+.image-avatar-sql{
+    background-image: url('/Microsoft SQL Server.png');
+    background-size: cover;
+}
+
+.image-avatar-azure-sql{
+    background-image: url('/Azure SQL Database.png');
+    background-size: cover;
+}
+
+.image-avatar-csharp{
+    background-image: url('/CSharp.png');
+    background-size: cover;
+}
+
+.image-avatar-html{
+    background-image: url('/HTML5.png');
+    background-size: cover;
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,38 @@
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-cards{
+    width:95%;
+}
+
+.image-avatar-azure{
+    background-image: url('/Azure.png');
+    background-size: cover;
+}
+
+.image-avatar-agile{
+    background-image: url('/Agile.png');
+    background-size: cover;
+}
+
+.image-avatar-powerbi{
+    background-image: url('/PowerBI.png');
+    background-size: cover;
+}
+
+.image-avatar-angular{
+    background-image: url('/Angular.png');
+    background-size: cover;
+}
+
+.image-avatar-angular-material{
+    background-image: url('/Angular.png');
+    background-size: cover;
+}
+
+.image-avatar-softskills{
+    background-image: url('/Soft Skill.png');
+    background-size: cover;
+}
