@@ -16,6 +16,11 @@
     width:95%;
   }
 
+  .custom-cards-clickable{
+    width:95%;
+    cursor: pointer;
+  }
+
   .row{
     margin-top: 20px;
     margin-bottom: 20px;

@@ -1,0 +1,93 @@
+<div class="row">
+    <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <mat-card class="custom-cards">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab class="image-avatar-sql">
+
+                        </button>
+                    </div>
+                    <mat-card-title>MS SQL Server</mat-card-title>
+                    <mat-card-subtitle>Database</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>I have been working on DDL and DML commands extensively.
+                        Created and modified many stored procedures and functions.
+                        Also used merge queries and joins along with tackling some performace issues.</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <mat-card class="custom-cards">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab class="image-avatar-azure-sql">
+
+                        </button>
+                    </div>
+                    <mat-card-title>Azure SQL Server</mat-card-title>
+                    <mat-card-subtitle>Database</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>I have been working on DDL and DML commands extensively.
+                        Created and modified many stored procedures and functions.
+                        Also used merge queries and joins along with tackling some performace issues.</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <mat-card class="custom-cards">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab class="image-avatar-csharp">
+
+                        </button>
+                    </div>
+                    <mat-card-title>C#</mat-card-title>
+                    <mat-card-subtitle>Language</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>I have been working on DDL and DML commands extensively.
+                        Created and modified many stored procedures and functions.
+                        Also used merge queries and joins along with tackling some performace issues.</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <mat-card class="custom-cards">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab class="image-avatar-html">
+
+                        </button>
+                    </div>
+                    <mat-card-title>HTML</mat-card-title>
+                    <mat-card-subtitle>Language</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>I have been working on DDL and DML commands extensively.
+                        Created and modified many stored procedures and functions.
+                        Also used merge queries and joins along with tackling some performace issues.</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+<div class="row">
+    <mat-expansion-panel (opened)="panelChartsOpenState.set(true)" (closed)="panelChartsOpenState.set(false)">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Technologies Charts</mat-panel-title>
+            <mat-panel-description>
+                The charts showing the proficiency and experience of technologies.
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+            <mat-tab-group>
+                <mat-tab label="Experience/Technology"><app-bar-charts></app-bar-charts></mat-tab>
+                <mat-tab label="Proficiency/Technology"><app-bar-charts></app-bar-charts></mat-tab>
+                <mat-tab label="Proficiency/Category"><app-bar-charts></app-bar-charts></mat-tab>
+            </mat-tab-group>
+        </div>
+    </mat-expansion-panel>
+</div>
