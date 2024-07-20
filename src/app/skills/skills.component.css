@@ -13,22 +13,22 @@
 }
 
 .image-avatar-sql{
-    background-image: url('/Microsoft SQL Server.png');
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Microsoft SQL Server.png');
     background-size: cover;
 }
 
 .image-avatar-azure-sql{
-    background-image: url('/Azure SQL Database.png');
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Azure SQL Database.png');
     background-size: cover;
 }
 
 .image-avatar-csharp{
-    background-image: url('/CSharp.png');
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/CSharp.png');
     background-size: cover;
 }
 
 .image-avatar-html{
-    background-image: url('/HTML5.png');
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/HTML5.png');
     background-size: cover;
 }
 
