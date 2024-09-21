@@ -1,5 +1,8 @@
-<mat-toolbar>
+<mat-toolbar [class.mat-elevation-z2]="true" color="primary" class="position-constant">
     <mat-toolbar-row>
+      <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="MenuIconClicked()" color="primary">
+        <mat-icon>menu</mat-icon>
+      </button>
       <span routerLink="/Home" class="clickable">Portfolio</span>
     </mat-toolbar-row>
 </mat-toolbar>

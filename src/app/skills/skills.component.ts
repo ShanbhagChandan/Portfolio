@@ -9,23 +9,16 @@ import { BarChartsComponent } from '../bar-charts/bar-charts.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatProgressSpinnerModule, ProgressSpinnerMode } from '@angular/material/progress-spinner';
+import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [MatGridListModule,MatCardModule,MatIconModule,MatButtonModule,MatProgressBarModule,MatSliderModule,MatProgressSpinnerModule,MatExpansionModule,MatTabsModule,BarChartsComponent],
+  imports: [MatGridListModule,MatCardModule,MatIconModule,MatButtonModule,MatExpansionModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SkillsComponent {
-  readonly panelChartsOpenState = signal(false);
-  mode: ProgressSpinnerMode = 'determinate';
-  formatLabel(value: number): string {
-    if (value >= 1000) {
-      return Math.round(value / 1000) + 'k';
-    }
 
-    return `${value}`;
-  }
 }

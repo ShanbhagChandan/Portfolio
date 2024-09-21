@@ -8,5 +8,79 @@
 }
 
 .custom-cards{
-    width:95%;
+    width:97%;
+    height:97%;       
+}
+
+.custom-header{
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-subtitle{
+    justify-content: center;
+    display: flex;
+}
+
+.custom-tile-flip{
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.custom-flip-cards{
+    width:97%;
+    height:97%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.custom-tile-flip:hover .custom-flip-cards{
+    transform: rotateY(180deg);
+}
+
+.front-face,.back-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back-face{
+    transform: rotateY(180deg);
+}
+
+.cover-image-ecolab{
+    background-image: url('/Ecolab.png');
+    background-size: cover;
+    height:280px;
+    width:280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 1px #e2eaf0;
+    margin-top: 15px;
+}
+
+.cover-image-scientificgames{
+    background-image: url('/LightAndWonder.jpeg');
+    background-size: cover;
+    height:280px;
+    width:280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 1px #e2eaf0;
+    margin-top: 15px;
+}
+
+.cover-image-slk{
+    background-image: url('/SLK.jpeg');
+    background-size: cover;
+    height:280px;
+    width:280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 1px #e2eaf0;  
+    margin-top: 15px;
 }

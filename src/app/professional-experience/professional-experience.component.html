@@ -3,287 +3,256 @@
         <mat-step>
             <ng-template matStepLabel>Ecolab Digital Center</ng-template>
             <div>
-                <button mat-raised-button matStepperNext>Next</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>email</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>University/Board</mat-card-title>
-                                <mat-card-subtitle>Karnataka School Examination & Assesment Board</mat-card-subtitle>
-                            </mat-card-header>
+                <mat-grid-list cols="4" rowHeight="100px">
+                    <mat-grid-tile [colspan]="1" [rowspan]="4" class="custom-tile-flip">
+                        <mat-card class="custom-flip-cards">
+                            <div class="front-face">
+                                <mat-card-header class="custom-header"> 
+                                  <mat-card-title>Ecolab Degital Center</mat-card-title>
+                                  <mat-card-subtitle>Bengaluru</mat-card-subtitle>
+                                </mat-card-header>
+                                <div mat-card-avatar class="cover-image-ecolab"></div>
+                            </div>
+                            <div class="back-face">
+                                <mat-card-header class="custom-header">
+                                    <mat-card-title>Duration</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>21/February/2022 - Current</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Designations</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>Senior Software Engineer</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>Software Engineer</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Hikes Recieved</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>During April-2023</mat-chip>
+                                            <mat-chip>During April-2024</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Promotions Recieved</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>During May-2023</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                </mat-card-header>
+                            </div>
                         </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    </mat-grid-tile>  
+                    <mat-grid-tile [colspan]="3" [rowspan]="4">
                         <mat-card class="custom-cards">
                             <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>call</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Duration</mat-card-title>
-                                <mat-card-subtitle>Aug/2011 - May/2012</mat-card-subtitle>
+                                <mat-card-title>Summary</mat-card-title>
                             </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>location_on</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Name Of Institution</mat-card-title>
-                                <mat-card-subtitle>Shri Siddhivinayaka English Medium High School</mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>verified_user</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Location</mat-card-title>
-                                <mat-card-subtitle>Siddapur, Uttara Kannada, Karnataka</mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>location_on</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Website</mat-card-title>
-                                <mat-card-subtitle><a target="_blank" href="https://spsamiti.org/siddhivinayak-english-medium-highschool-siddapur/">SVEM</a></mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>verified_user</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Aggregate Percentage</mat-card-title>
-                                <mat-card-subtitle>94.56%</mat-card-subtitle>
-                            </mat-card-header>
+                            <mat-card-content>
+                                <mat-list role="list">
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Created and maintained applications using .Net core, angular and azure cloud services.
+                                    </mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Worked in agile methodologies and involved in code deployement using azure devops tool.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Regularly communicated with onsite members and shared ideas with team members.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Involved in designing the features and presenting demos to design panel members.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Wrote some unit test cases using MS tests and fakeiteasy that improved productivity.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon>
+                                        Built some console applications due to urgent requirements to mitigate the production issues.</mat-list-item>
+                                </mat-list>
+                            </mat-card-content>
                         </mat-card>
                     </mat-grid-tile>
                 </mat-grid-list>
             </div>
         </mat-step>
         <mat-step>
-            <ng-template matStepLabel>Scientific Games</ng-template>
+            <ng-template matStepLabel>Light & Wonder</ng-template>
             <div>
-                <button mat-raised-button matStepperPrevious class="devider">Back</button>
-                <button mat-raised-button matStepperNext>Next</button>
+                <button mat-raised-button matStepperPrevious class="devider" color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>email</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>University/Board</mat-card-title>
-                                <mat-card-subtitle>Karnataka School Examination & Assesment Board</mat-card-subtitle>
-                            </mat-card-header>
+                <mat-grid-list cols="4" rowHeight="100px">
+                    <mat-grid-tile [colspan]="1" [rowspan]="4" class="custom-tile-flip">
+                        <mat-card class="custom-flip-cards">
+                            <div class="front-face">
+                                <mat-card-header class="custom-header"> 
+                                  <mat-card-title>Light & Wonder</mat-card-title>
+                                  <mat-card-subtitle>Bengaluru</mat-card-subtitle>
+                                </mat-card-header>
+                                <div mat-card-avatar class="cover-image-scientificgames"></div>
+                            </div>
+                            <div class="back-face">
+                                <mat-card-header class="custom-header">
+                                    <mat-card-title>Duration</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>29/January/2021 - 14/February/2022</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Designations</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>Software Engineer</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Hikes Recieved</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>During October-2021</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Promotions Recieved</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>NA</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                </mat-card-header>
+                            </div>
                         </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    </mat-grid-tile>  
+                    <mat-grid-tile [colspan]="3" [rowspan]="4">
                         <mat-card class="custom-cards">
                             <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>call</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Duration</mat-card-title>
-                                <mat-card-subtitle>Aug/2012 - May/2014</mat-card-subtitle>
+                                <mat-card-title>Summary</mat-card-title>
                             </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>location_on</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Name Of Institution</mat-card-title>
-                                <mat-card-subtitle>MES Chaitanya PU College</mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>verified_user</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Location</mat-card-title>
-                                <mat-card-subtitle>Sirsi, Uttara Kannada, Karnataka</mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>location_on</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Website</mat-card-title>
-                                <mat-card-subtitle><a target="_blank" href="https://www.meschaitanyasirsi.org/">Chaitnya</a></mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>verified_user</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Aggregate Percentage</mat-card-title>
-                                <mat-card-subtitle>85.33%</mat-card-subtitle>
-                            </mat-card-header>
+                            <mat-card-content>
+                                <mat-list role="list">
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Created and maintained web applications using .Net MVC, HTML, CSS and Jquery.
+                                    </mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Maintained windows services applications using .Net and done some sql query optimization.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Occasionally communicated with clients from denmark and portugal.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Involved in poc of power bi integration in web application and worked in agile methodologies.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Worked on some critical production deployements along with onsite director.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon>
+                                        Initiated the new repository in bit bucket and moved all the codes and did initial setup.</mat-list-item>
+                                </mat-list>
+                            </mat-card-content>
                         </mat-card>
                     </mat-grid-tile>
                 </mat-grid-list>
             </div>
         </mat-step>
         <mat-step>
-            <ng-template matStepLabel>SLK Software Services Pvt Ltd</ng-template>
+            <ng-template matStepLabel>SLK Software Services</ng-template>
             <div>
-                <button mat-raised-button matStepperPrevious>Back</button>
+                <button mat-raised-button matStepperPrevious color="primary">Back</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>email</mat-icon>
-                                    </button>
+                <mat-grid-list cols="4" rowHeight="100px">
+                    <mat-grid-tile [colspan]="1" [rowspan]="4" class="custom-tile-flip">
+                        <mat-card class="custom-flip-cards">
+                            <div class="front-face">
+                                <mat-card-header class="custom-header">
+                                    <mat-card-title>SLK Software Services</mat-card-title>
+                                    <mat-card-subtitle>Bengaluru</mat-card-subtitle>
+                                </mat-card-header>
+                                <div class="gradient-border">
+                                    <div mat-card-avatar class="cover-image-slk"></div>
                                 </div>
-                                <mat-card-title>University/Board</mat-card-title>
-                                <mat-card-subtitle>Vishweshwarayya Technological University</mat-card-subtitle>
-                            </mat-card-header>
+                            </div>
+                            <div class="back-face">
+                                <mat-card-header class="custom-header">
+                                    <mat-card-title>Duration</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>11/October/2018 - 28/January/2021</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Designations</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle"> 
+                                        <mat-chip-set>
+                                            <mat-chip>Software Engineer</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-subtitle class="custom-subtitle"> 
+                                        <mat-chip-set>
+                                            <mat-chip>Associate Software Engineer</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-subtitle class="custom-subtitle"> 
+                                        <mat-chip-set>
+                                            <mat-chip>Trainee Software Engineer</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Hikes Recieved</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle">
+                                        <mat-chip-set>
+                                            <mat-chip>During July-2019</mat-chip>
+                                            <mat-chip>During October-2020</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                    <mat-card-title>Promotions Recieved</mat-card-title>
+                                    <mat-card-subtitle class="custom-subtitle"> 
+                                        <mat-chip-set>
+                                            <mat-chip>During July-2019</mat-chip>
+                                            <mat-chip>During October-2020</mat-chip>
+                                        </mat-chip-set>
+                                    </mat-card-subtitle>
+                                </mat-card-header>
+                            </div>
                         </mat-card>
                     </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-grid-tile [colspan]="3" [rowspan]="4">
                         <mat-card class="custom-cards">
                             <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>call</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Duration</mat-card-title>
-                                <mat-card-subtitle>Aug/2014 - May/2018</mat-card-subtitle>
+                                <mat-card-title>Summary</mat-card-title>
                             </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>location_on</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Name Of Institution</mat-card-title>
-                                <mat-card-subtitle>Jawaharlal Nehru National College Of Engineering</mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>verified_user</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Location</mat-card-title>
-                                <mat-card-subtitle>Navule, Shivamogga, Karnataka</mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>location_on</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Website</mat-card-title>
-                                <mat-card-subtitle><a target="_blank" href="https://www.jnnce.ac.in/jnndemo/">JNNCE</a></mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </mat-grid-tile>
-                    <mat-grid-tile [colspan]="1" [rowspan]="1">
-                        <mat-card class="custom-cards">
-                            <mat-card-header>
-                                <div mat-card-avatar>
-                                    <button mat-mini-fab>
-                                        <mat-icon>verified_user</mat-icon>
-                                    </button>
-                                </div>
-                                <mat-card-title>Aggregate Percentage</mat-card-title>
-                                <mat-card-subtitle>74.56%</mat-card-subtitle>
-                            </mat-card-header>
+                            <mat-card-content>
+                                <mat-list role="list">
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Created and maintained applications using .Net MVC, HTML, CSS and Jquery. 
+                                    </mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Worked on sql stored procedures and designed some databases and created tools to monitor it.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Followed waterfall methodologies and created some new applications right from scratch.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Involved in requirement garthering, development, unit testing, code deployment and realease.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon> 
+                                        Built many features in multiple applications which helped HR and company employees.</mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <mat-icon matListItemIcon> beenhere</mat-icon>
+                                        Created wireframes and worked on critical tasks and completed within short period of time.</mat-list-item>
+                                </mat-list>
+                            </mat-card-content>
                         </mat-card>
                     </mat-grid-tile>
                 </mat-grid-list>

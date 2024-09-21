@@ -1,3 +1,11 @@
-.clickable{
+.clickable {
     cursor: pointer;
+    margin-left:20px;
+}
+
+.position-constant {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
 }
