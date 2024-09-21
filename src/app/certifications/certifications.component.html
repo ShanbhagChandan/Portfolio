@@ -1,86 +1,115 @@
+
 <div class="row">
-    <mat-grid-list cols="3" rowHeight="100px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-            <mat-card class="custom-cards">
-                <mat-card-header> 
-                    <div mat-card-avatar>
-                        <button mat-mini-fab class="image-avatar-azure">
-
-                        </button>
-                    </div>
-                  <mat-card-title>Azure Fundamentals (Az-900)</mat-card-title>
-                  <mat-card-subtitle>Issuer: Microsoft | Id: I000000</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </mat-grid-tile> 
-        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-            <mat-card class="custom-cards">
-                <mat-card-header> 
-                    <div mat-card-avatar>
-                        <button mat-mini-fab class="image-avatar-agile">
-
-                        </button>
-                    </div>
-                  <mat-card-title>Agile Methadologies</mat-card-title>
-                  <mat-card-subtitle>Issuer: Learning | Provider: Scientific Games</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </mat-grid-tile>   
-        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-            <mat-card class="custom-cards">
-                <mat-card-header> 
-                    <div mat-card-avatar>
-                        <button mat-mini-fab class="image-avatar-powerbi">
-
-                        </button>
-                    </div>
-                  <mat-card-title>Power BI</mat-card-title>
-                  <mat-card-subtitle>Issuer: Learning | Provider: Scientific Games</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </mat-grid-tile>  
-    </mat-grid-list>
-</div>
+    <mat-expansion-panel color="primary" [expanded]="true" (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Completed Certifications </mat-panel-title>
+            <mat-panel-description>
+              The certifications that are completed.
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+            <mat-grid-list cols="3" rowHeight="100px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-azure">
+                            </div>
+                          <mat-card-title>Azure Fundamentals (AZ-900)</mat-card-title>
+                          <mat-card-subtitle>Issuer: Microsoft | Id: I000000</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-agile">
+                            </div>
+                          <mat-card-title>Agile Methadologies</mat-card-title>
+                          <mat-card-subtitle>Issuer: Learning | Provider: Scientific Games</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile>   
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-powerbi">
+                            </div>
+                          <mat-card-title>Power BI</mat-card-title>
+                          <mat-card-subtitle>Issuer: Learning | Provider: Scientific Games</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile>  
+            </mat-grid-list>
+        </div>
+        <div class="row">
+            <mat-grid-list cols="3" rowHeight="100px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-angular">
+                            </div>
+                          <mat-card-title>Angular</mat-card-title>
+                          <mat-card-subtitle>Issuer: Pluralsite</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-angular-material">
+                            </div>
+                          <mat-card-title>Angular Material</mat-card-title>
+                          <mat-card-subtitle>Issuer: Pluralsite</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile>   
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-softskills">
+                            </div>
+                          <mat-card-title>Soft Skills</mat-card-title>
+                          <mat-card-subtitle>Issuer: VKSSF</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile>  
+            </mat-grid-list>
+        </div>
+    </mat-expansion-panel>
+<div>
 <div class="row">
-    <mat-grid-list cols="3" rowHeight="100px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-            <mat-card class="custom-cards">
-                <mat-card-header> 
-                    <div mat-card-avatar>
-                        <button mat-mini-fab class="image-avatar-angular">
+    <mat-expansion-panel color="primary" [expanded]="true" (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Ongoing Certifications </mat-panel-title>
+            <mat-panel-description>
+              The certifications that are planned to be completed.
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+            <mat-grid-list cols="2" rowHeight="100px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-azure">
+                            </div>
+                          <mat-card-title>Azure Developer Associate (AZ-204)</mat-card-title>
+                          <mat-card-subtitle>Issuer: Microsoft</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile> 
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
+                    <mat-card class="custom-cards">
+                        <mat-card-header> 
+                            <div mat-card-avatar class="image-avatar-azure">                                
+                            </div>
+                          <mat-card-title>Azure Solutions Architect Expert (AZ-305)</mat-card-title>
+                          <mat-card-subtitle>Issuer: Microsoft</mat-card-subtitle>
+                        </mat-card-header>
+                    </mat-card>
+                </mat-grid-tile>   
+            </mat-grid-list>
+        </div>
+    </mat-expansion-panel>
+<div>
 
-                        </button>
-                    </div>
-                  <mat-card-title>Angular</mat-card-title>
-                  <mat-card-subtitle>Issuer: Pluralsite</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </mat-grid-tile> 
-        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-            <mat-card class="custom-cards">
-                <mat-card-header> 
-                    <div mat-card-avatar>
-                        <button mat-mini-fab class="image-avatar-angular-material">
 
-                        </button>
-                    </div>
-                  <mat-card-title>Angular Material</mat-card-title>
-                  <mat-card-subtitle>Issuer: Pluralsite</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </mat-grid-tile>   
-        <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
-            <mat-card class="custom-cards">
-                <mat-card-header> 
-                    <div mat-card-avatar>
-                        <button mat-mini-fab class="image-avatar-softskills">
-
-                        </button>
-                    </div>
-                  <mat-card-title>Soft Skills</mat-card-title>
-                  <mat-card-subtitle>Issuer: VKSSF</mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </mat-grid-tile>  
-    </mat-grid-list>
-</div>

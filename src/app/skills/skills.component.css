@@ -1,10 +1,6 @@
-.cover-image{
-    background-image: url('https://shanbhagchandan.github.io/Portfolio/chandan_icon.jpg');
-    background-size: cover;
-    height:190px;
-    width:190px;
-    margin-left: auto;
-    margin-right: auto;
+.row{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .custom-cards{
@@ -12,28 +8,180 @@
     height:95%;
 }
 
+.custom-header{
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-tile-flip{
+    perspective: 1000px;
+    background-color: transparent;
+    width:80%;
+    height:99%;
+}
+
+.custom-flip-cards{
+    width:100%;
+    height:98%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.custom-tile-flip:hover .custom-flip-cards{
+    transform: rotateY(180deg);
+}
+
+.front-face,.back-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back-face{
+    transform: rotateY(180deg);
+}
+
+.image-avatar-common{
+    background-size: 135px 135px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:190px;
+    width:190px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 1px #e2eaf0;
+    margin-top:15px;
+    border-radius:50%;
+}
+
 .image-avatar-sql{
     background-image: url('https://shanbhagchandan.github.io/Portfolio/Microsoft SQL Server.png');
-    background-size: cover;
 }
 
 .image-avatar-azure-sql{
     background-image: url('https://shanbhagchandan.github.io/Portfolio/Azure SQL Database.png');
-    background-size: cover;
 }
 
 .image-avatar-csharp{
     background-image: url('https://shanbhagchandan.github.io/Portfolio/CSharp.png');
-    background-size: cover;
 }
 
 .image-avatar-html{
     background-image: url('https://shanbhagchandan.github.io/Portfolio/HTML5.png');
-    background-size: cover;
 }
 
-.row{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.image-avatar-css{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/CSS3.png');
 }
 
+.image-avatar-javascript{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/JavaScript.png');
+}
+
+.image-avatar-bootstrap{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Bootstrap.png');
+}
+
+.image-avatar-json{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/JSON.png');
+}
+
+.image-avatar-jquery{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/jQuery.png');
+}
+
+.image-avatar-dornet{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/NET.png');
+}
+
+.image-avatar-dornetcore{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/NET core.png');
+}
+
+.image-avatar-angular{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Angular.png');
+}
+
+.image-avatar-azure{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Azure.png');
+}
+
+.image-avatar-cosmos{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Cosmos BD.png');
+}
+
+.image-avatar-azure-devops{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Azure Devops.png');
+}
+
+.image-avatar-git{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Git.png');
+}
+
+.image-avatar-git-hub{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/GitHub.png');
+}
+
+.image-avatar-bitbucket{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/BitBucket.png');
+}
+
+.image-avatar-visual-studio{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Visual Studio.png');
+}
+
+.image-avatar-visual-studio-code{
+    background-image: url('https://shanbhagchandan.github.io/Portfolio/Visual Studio Code (VS Code).png');
+}
+
+.image-avatar-entity-framework{
+    background-image: url('/DotNet-Old.jpg');
+}
+
+.image-avatar-entity-framework-core{
+    background-image: url('/DotNet-New.png');
+}
+
+.image-avatar-azure-servicebus{
+    background-image: url('/Service-Bus.png');
+}
+
+.image-avatar-azure-webjobs{
+    background-image: url('/Web-Environment.png');
+}
+
+.image-avatar-azure-table-storage{
+    background-image: url('/Table.png');
+}
+
+.image-avatar-azure-stream-analytics-job{
+    background-image: url('/Stream-Analytics-Jobs.png');
+}
+
+.image-avatar-azure-storage-que{
+    background-image: url('/Storage-Queue.png');
+}
+
+.image-avatar-azure-storage-accounts{
+    background-image: url('/Storage-Accounts.png');
+}
+
+.image-avatar-azure-function-apps{
+    background-image: url('/Function-Apps.png');
+}
+
+.image-avatar-azure-event-hubs{
+    background-image: url('/Event-Hubs.png');
+}
+
+.image-avatar-azure-app-services{
+    background-image: url('/App-Services.png');
+}
+
+.image-avatar-azure-redis-cache{
+    background-image: url('/Cache-Redis.png');
+}

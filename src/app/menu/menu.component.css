@@ -1,0 +1,13 @@
+.custom-cards-clickable{
+    cursor: pointer;
+    background-color:#673ab7;
+    width:100%;
+    margin: 20px 0px;
+}
+
+
+.custom-cards-clickable .mat-mdc-extended-fab{
+    width: 100%;
+    border-radius: 0px;
+    justify-content: left;
+}

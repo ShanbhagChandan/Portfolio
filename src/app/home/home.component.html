@@ -62,7 +62,9 @@
                     </button>
                   </div>
                   <mat-card-title>Linked In</mat-card-title>
-                  <mat-card-subtitle><a href="https://www.linkedin.com/in/chandan-shanbhag-b315bb189/" target="_blank">Chandan Shanbhag</a></mat-card-subtitle>
+                  <mat-card-subtitle>
+                    <a mat-icon-button class="image-avatar-common image-avatar-linkedin" href="https://www.linkedin.com/in/chandan-shanbhag-b315bb189/" target="_blank" matTooltip="Linked in profile"></a>
+                  </mat-card-subtitle>
                 </mat-card-header>
             </mat-card>
         </mat-grid-tile> 
@@ -127,14 +129,17 @@
                     </button>
                   </div>
                   <mat-card-title>Resume</mat-card-title>
-                  <mat-card-subtitle><a href="/">PDF</a><span> </span><a href="/">DOC</a></mat-card-subtitle>
+                  <mat-card-subtitle>
+                      <a mat-icon-button href="/Resume.pdf" download class="image-avatar-common image-avatar-pdf" matTooltip="Download as pdf document"></a>
+                      <a mat-icon-button href="/Resume.docx" download class="image-avatar-common image-avatar-doc" matTooltip="Download as word document"></a>
+                  </mat-card-subtitle>
                 </mat-card-header>
             </mat-card>
         </mat-grid-tile>      
     </mat-grid-list>
 </div>
-<div class="row">
-    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+<!-- <div class="row">
+    <mat-expansion-panel color="primary" (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
         <mat-expansion-panel-header>
           <mat-panel-title> Professional Overview </mat-panel-title>
           <mat-panel-description>
@@ -224,6 +229,23 @@
             </mat-grid-list>
         </div>
     </mat-expansion-panel>
+</div> -->
+<div class="row">
+  <mat-expansion-panel (opened)="panelChartsOpenState.set(true)" (closed)="panelChartsOpenState.set(false)">
+      <mat-expansion-panel-header>
+          <mat-panel-title> Technologies Charts</mat-panel-title>
+          <mat-panel-description>
+              The charts showing the proficiency and experience of technologies.
+          </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="row">
+          <mat-tab-group>
+              <mat-tab label="Experience/Technology"><app-bar-charts></app-bar-charts></mat-tab>
+              <mat-tab label="Proficiency/Technology"><app-bar-charts></app-bar-charts></mat-tab>
+              <mat-tab label="Proficiency/Category"><app-bar-charts></app-bar-charts></mat-tab>
+          </mat-tab-group>
+      </div>
+  </mat-expansion-panel>
 </div>
 
 
