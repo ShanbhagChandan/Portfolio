@@ -1,6 +1,6 @@
 .container{
     padding:20px;
-    min-height: 600px;
+    min-height: 90vh;
     background-color:#eeeeee
 }
 
@@ -12,3 +12,16 @@
 .side-nav-style{
     background-color:#673ab7;
 }
+
+@media only screen and (max-width: 600px){
+    .main-container{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .show-mobile{
+        display:none;
+    }
+}
+
