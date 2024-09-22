@@ -1,0 +1,220 @@
+{
+    "Experience":[
+        {
+            "CategoryId":1,
+            "CategoryName":"Databases",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"Microsoft SQL Server",
+                    "Experience":6,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":2,
+                    "SubCategoryName":"Azure Microsoft SQL Server",
+                    "Experience":6,
+                    "Profeciency":8
+                }
+            ]
+        },
+        {
+            "CategoryId":2,
+            "CategoryName":"Frontend Languages",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"HTML",
+                    "Experience":6,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":2,
+                    "SubCategoryName":"CSS",
+                    "Experience":6,
+                    "Profeciency":6
+                },
+                {
+                    "SubCategoryId":3,
+                    "SubCategoryName":"Javascript",
+                    "Experience":6,
+                    "Profeciency":6
+                }
+            ]
+        },
+        {
+            "CategoryId":3,
+            "CategoryName":"Backend Languages",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"C#",
+                    "Experience":6,
+                    "Profeciency":8
+                }
+            ]
+        },
+        {
+            "CategoryId":4,
+            "CategoryName":"Frontend Frameworks",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"JQuery",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":2,
+                    "SubCategoryName":"Bootstrap",
+                    "Experience":6,
+                    "Profeciency":5
+                },
+                {
+                    "SubCategoryId":3,
+                    "SubCategoryName":"Angular",
+                    "Experience":2,
+                    "Profeciency":5
+                }
+            ]
+        },
+        {
+            "CategoryId":5,
+            "CategoryName":"Backend Frameworks",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":".Net",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":2,
+                    "SubCategoryName":".Net Core",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":3,
+                    "SubCategoryName":"Entity Framework",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":4,
+                    "SubCategoryName":"Entity Framework Core",
+                    "Experience":3,
+                    "Profeciency":8
+                }
+            ]
+        },
+        {
+            "CategoryId":6,
+            "CategoryName":"Azure Cloud Services",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"Cosmos DB",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":2,
+                    "SubCategoryName":"Service Bus",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":3,
+                    "SubCategoryName":"Web Jobs",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":4,
+                    "SubCategoryName":"Table Storage",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":5,
+                    "SubCategoryName":"Stream Analytics Job",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":6,
+                    "SubCategoryName":"Storage Ques",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":7,
+                    "SubCategoryName":"Storage Accounts",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":8,
+                    "SubCategoryName":"Function Apps",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":9,
+                    "SubCategoryName":"Event Hubs",
+                    "Experience":6,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":10,
+                    "SubCategoryName":"App Services",
+                    "Experience":3,
+                    "Profeciency":8
+                },
+                {
+                    "SubCategoryId":11,
+                    "SubCategoryName":"Redis Cache",
+                    "Experience":3,
+                    "Profeciency":8
+                }
+            ]
+        },
+        {
+            "CategoryId":7,
+            "CategoryName":"Version Control",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"Git",
+                    "Experience":4,
+                    "Profeciency":7
+                }
+            ]
+        },
+        {
+            "CategoryId":8,
+            "CategoryName":"Repository",
+            "SubCategory":[
+                {
+                    "SubCategoryId":1,
+                    "SubCategoryName":"Azure Devops",
+                    "Experience":3,
+                    "Profeciency":7
+                },
+                {
+                    "SubCategoryId":2,
+                    "SubCategoryName":"Bit Bucket",
+                    "Experience":1,
+                    "Profeciency":5
+                },
+                {
+                    "SubCategoryId":3,
+                    "SubCategoryName":"Git Hub",
+                    "Experience":1,
+                    "Profeciency":5
+                }
+            ]
+        }
+    ]
+}
