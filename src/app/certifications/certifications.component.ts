@@ -6,6 +6,7 @@ import { MatLabel } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MenuServiceService } from '../service/menu-service.service';
 
 @Component({
   selector: 'app-certifications',
@@ -15,5 +16,14 @@ import { MatStepperModule } from '@angular/material/stepper';
   styleUrl: './certifications.component.css'
 })
 export class CertificationsComponent {
+  heading:string = 'Certifications';
   readonly panelOpenState = signal(true);
+
+  constructor(private menuServiceService:MenuServiceService){
+    
+  }
+
+  ngOnInit(){
+    this.menuServiceService.SetPageHeading(this.heading);
+  }
 }

@@ -15,13 +15,14 @@ import { CommonModule } from '@angular/common';
 })
 export class ProfessionalSummaryComponent implements OnInit {
   isMenuExpanded: boolean =  false;
+  heading:string = 'Summary';
   constructor(private menuServiceService:MenuServiceService){
 
   }
 
   ngOnInit(){
     this.menuServiceService.menuExpand$.subscribe(x => this.isMenuExpanded = x);
-    console.log(this.isMenuExpanded);
+    this.menuServiceService.SetPageHeading(this.heading);
   }
 
 }

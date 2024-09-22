@@ -3,6 +3,10 @@
     margin-left:20px;
 }
 
+.margin-heading {
+    margin-left:10px;
+}
+
 .position-constant {
     position: sticky;
     position: -webkit-sticky;

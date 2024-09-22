@@ -5,6 +5,7 @@ import { MatLabel } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import {MatStepperModule} from '@angular/material/stepper';
+import { MenuServiceService } from '../service/menu-service.service';
 
 @Component({
   selector: 'app-education',
@@ -14,5 +15,13 @@ import {MatStepperModule} from '@angular/material/stepper';
   styleUrl: './education.component.css'
 })
 export class EducationComponent {
+  heading:string = 'Education';
 
+  constructor(private menuServiceService:MenuServiceService){
+    
+  }
+
+  ngOnInit(){
+    this.menuServiceService.SetPageHeading(this.heading);
+  }
 }
