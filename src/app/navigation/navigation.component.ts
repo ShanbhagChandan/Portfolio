@@ -14,10 +14,15 @@ import { MenuServiceService } from '../service/menu-service.service';
 })
 export class NavigationComponent {
   clicked:boolean = false;
+  pageHeading : string = '';
   @Output() menuClicked: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor(private menuServiceService:MenuServiceService){
 
+  }
+
+  ngOnInit(){
+     this.menuServiceService.pageHeading$.subscribe(x => this.pageHeading = x);
   }
 
   MenuIconClicked(){

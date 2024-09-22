@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import {MatSidenavModule} from '@angular/material/sidenav'
 import { MenuComponent } from './menu/menu.component';
+import { MenuServiceService } from './service/menu-service.service';
 
 @Component({
   selector: 'app-root',

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -10,6 +10,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatProgressSpinnerModule, ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
+import { MenuServiceService } from '../service/menu-service.service';
 
 @Component({
   selector: 'app-skills',
@@ -19,6 +20,14 @@ import { MatChipsModule } from '@angular/material/chips';
   styleUrl: './skills.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit {
+  heading:string = 'Skills';
 
+  constructor(private menuServiceService:MenuServiceService){
+    
+  }
+
+  ngOnInit(){
+    this.menuServiceService.SetPageHeading(this.heading);
+  }
 }

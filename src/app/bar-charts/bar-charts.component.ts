@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import Highcharts from 'highcharts';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { ChartData } from '../models/chart';
 
 @Component({
   selector: 'app-bar-charts',
@@ -12,7 +13,11 @@ import { HighchartsChartModule } from 'highcharts-angular';
 export class BarChartsComponent implements OnInit{
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {};
-  data = [1, 2, 3, 4, 5, 1,1, 2, 3, 4, 5, 1,1, 2, 3, 4];
+  @Input() chartData: ChartData;
+
+  constructor(){
+
+  }
 
   ngOnInit(){
      this.chartOptions = {
@@ -20,19 +25,19 @@ export class BarChartsComponent implements OnInit{
         type: 'column',
       },
       title:{
-        text:"Experience v/s Technologies",
+        text: this.chartData.chartTitleText,
         align: 'center'
       },
       xAxis:{
-        categories: ['MS SQL', 'C#', '.Net', '.Net Core', 'Azure', 'Angular', 'Entity Framework', 'Entity Framework Core', 'ADO .Net', 'Azure Devops', 'Git', 'HTML', 'CSS', 'Javascript', 'Jquery', 'Bootstrap'],
+        type:'category', 
         title: {
-          text: 'Technologies'
+          text: this.chartData.xAxisText
         }
       },
       yAxis:{
         min:0,
         title: {
-          text: 'Experience in years'
+          text: this.chartData.yAxisText
         }
       },
       legend:{ 
@@ -42,12 +47,16 @@ export class BarChartsComponent implements OnInit{
         enabled: false
       },
       tooltip:{
-        valueSuffix: ' Year'
+        valueSuffix: this.chartData.tooltipSuffix,
+        headerFormat:'',
+        pointFormat: '<span style="font-size:14px;color:{point.color}">{point.name}:</span> <b>{point.y}</b>'
       },
       series: [
         {
           type: 'column',
-          data: this.data,
+          name: this.chartData.seriesName,
+          colorByPoint:true,
+          data: this.chartData.series,
         },
       ],
     };

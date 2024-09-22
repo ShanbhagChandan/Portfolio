@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatStepperModule } from '@angular/material/stepper';
 import {MatChipsModule} from '@angular/material/chips';
 import { MatListModule } from '@angular/material/list';
+import { MenuServiceService } from '../service/menu-service.service';
 
 @Component({
   selector: 'app-professional-experience',
@@ -16,5 +17,13 @@ import { MatListModule } from '@angular/material/list';
   styleUrl: './professional-experience.component.css'
 })
 export class ProfessionalExperienceComponent {
+  heading:string = 'Experience';
 
+  constructor(private menuServiceService:MenuServiceService){
+    
+  }
+
+  ngOnInit(){
+    this.menuServiceService.SetPageHeading(this.heading);
+  }
 }
