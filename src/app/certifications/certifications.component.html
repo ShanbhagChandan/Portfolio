@@ -8,7 +8,7 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="row">
-            <mat-grid-list cols="3" rowHeight="100px">
+            <mat-grid-list [cols]="isHandSet || isTablet ? 1 : 2" rowHeight="100px">
                 <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
                     <mat-card class="custom-cards">
                         <mat-card-header> 
@@ -39,10 +39,6 @@
                         </mat-card-header>
                     </mat-card>
                 </mat-grid-tile>  
-            </mat-grid-list>
-        </div>
-        <div class="row">
-            <mat-grid-list cols="3" rowHeight="100px">
                 <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
                     <mat-card class="custom-cards">
                         <mat-card-header> 
@@ -72,7 +68,7 @@
                           <mat-card-subtitle>Issuer: VKSSF</mat-card-subtitle>
                         </mat-card-header>
                     </mat-card>
-                </mat-grid-tile>  
+                </mat-grid-tile> 
             </mat-grid-list>
         </div>
     </mat-expansion-panel>
@@ -86,7 +82,7 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="row">
-            <mat-grid-list cols="2" rowHeight="100px">
+            <mat-grid-list [cols]="isHandSet || isTablet ? 1 : 2" rowHeight="100px">
                 <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
                     <mat-card class="custom-cards">
                         <mat-card-header> 

@@ -15,11 +15,12 @@ import { Experience } from '../models/experience';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { ChartData, DataSeries } from '../models/chart';
+import { BreakpointObserver, LayoutModule, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, MatIconModule, MatButtonModule, MatToolbarModule, MatExpansionModule, MatTabsModule, BarChartsComponent, RouterLink, MatTooltipModule, CommonModule],
+  imports: [MatGridListModule, MatCardModule, MatIconModule, MatButtonModule, MatToolbarModule, MatExpansionModule, MatTabsModule, BarChartsComponent, RouterLink, MatTooltipModule, CommonModule, LayoutModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -33,9 +34,13 @@ export class HomeComponent {
   experienceTechnologyChart: ChartData;
   proficiencyTechnologyChart: ChartData;
   proficiencyCategoryChart: ChartData;
+  isHandSet: boolean = false;
+  isTablet: boolean = false;
 
   constructor(private menuServiceService: MenuServiceService,
-    private dataService: DataService) {
+    private dataService: DataService,
+    private observer: BreakpointObserver,
+  ) {
 
   }
 
@@ -47,6 +52,9 @@ export class HomeComponent {
       this.CreateTechnologyProfeciencyChart();
       this.CreateCategoryProfeciencyChart();
     });
+
+    this.isHandSet = this.observer.isMatched(Breakpoints.HandsetPortrait);
+    this.isTablet = this.observer.isMatched([Breakpoints.HandsetLandscape,Breakpoints.TabletPortrait]);
   }
 
   ngOnDestroy() {
