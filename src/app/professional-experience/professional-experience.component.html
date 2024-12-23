@@ -1,13 +1,13 @@
 <div class="row">
-    <mat-stepper [linear]="true" #stepper>
+    <mat-stepper [linear]="true" [orientation]="isHandSet ? 'vertical' : 'horizontal'" #stepper>
         <mat-step>
             <ng-template matStepLabel>Ecolab Digital Center</ng-template>
             <div>
                 <button mat-raised-button matStepperNext color="primary">Next</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="4" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="4" class="custom-tile-flip">
+                <mat-grid-list gutterSize="20px" cols="4" rowHeight="100px">
+                    <mat-grid-tile [colspan]="isHandSet || isTablet ? 4 : 1" [rowspan]="4" class="custom-tile-flip">
                         <mat-card class="custom-flip-cards">
                             <div class="front-face">
                                 <mat-card-header class="custom-header"> 
@@ -52,7 +52,7 @@
                             </div>
                         </mat-card>
                     </mat-grid-tile>  
-                    <mat-grid-tile [colspan]="3" [rowspan]="4">
+                    <mat-grid-tile [colspan]="isHandSet || isTablet ? 4 : 3" [rowspan]="isHandSet ? 9 : 4">
                         <mat-card class="custom-cards">
                             <mat-card-header>
                                 <mat-card-title>Summary</mat-card-title>
@@ -92,8 +92,8 @@
                 <button mat-raised-button matStepperNext color="primary">Next</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="4" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="4" class="custom-tile-flip">
+                <mat-grid-list gutterSize="20px" cols="4" rowHeight="100px">
+                    <mat-grid-tile [colspan]="isHandSet || isTablet ? 4 : 1" [rowspan]="4" class="custom-tile-flip">
                         <mat-card class="custom-flip-cards">
                             <div class="front-face">
                                 <mat-card-header class="custom-header"> 
@@ -132,7 +132,7 @@
                             </div>
                         </mat-card>
                     </mat-grid-tile>  
-                    <mat-grid-tile [colspan]="3" [rowspan]="4">
+                    <mat-grid-tile [colspan]="isHandSet || isTablet ? 4 : 3" [rowspan]="isHandSet ? 9 : 4">
                         <mat-card class="custom-cards">
                             <mat-card-header>
                                 <mat-card-title>Summary</mat-card-title>
@@ -171,8 +171,8 @@
                 <button mat-raised-button matStepperPrevious color="primary">Back</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="4" rowHeight="100px">
-                    <mat-grid-tile [colspan]="1" [rowspan]="4" class="custom-tile-flip">
+                <mat-grid-list gutterSize="20px" cols="4" rowHeight="100px">
+                    <mat-grid-tile [colspan]="isHandSet || isTablet ? 4 : 1" [rowspan]="4" class="custom-tile-flip">
                         <mat-card class="custom-flip-cards">
                             <div class="front-face">
                                 <mat-card-header class="custom-header">
@@ -225,7 +225,7 @@
                             </div>
                         </mat-card>
                     </mat-grid-tile>
-                    <mat-grid-tile [colspan]="3" [rowspan]="4">
+                    <mat-grid-tile [colspan]="isHandSet || isTablet ? 4 : 3" [rowspan]="isHandSet ? 9 : 4">
                         <mat-card class="custom-cards">
                             <mat-card-header>
                                 <mat-card-title>Summary</mat-card-title>

@@ -1,12 +1,12 @@
 <div class="row">
-    <mat-stepper [linear]="true" #stepper>
+    <mat-stepper [linear]="true" [orientation]="isHandSet ? 'vertical' : 'horizontal'" #stepper>
         <mat-step>
             <ng-template matStepLabel>Secondary School Living Certificate</ng-template>
             <div>
                 <button mat-raised-button matStepperNext color="primary">Next</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
+                <mat-grid-list gutterSize="20px" [cols]="isHandSet || isTablet ? 1 : 2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -33,10 +33,6 @@
                             </mat-card-header>
                         </mat-card>
                     </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -63,10 +59,6 @@
                             </mat-card-header>
                         </mat-card>
                     </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -103,7 +95,7 @@
                 <button mat-raised-button matStepperNext color="primary">Next</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
+                <mat-grid-list gutterSize="20px" [cols]="isHandSet || isTablet ? 1 : 2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -130,10 +122,6 @@
                             </mat-card-header>
                         </mat-card>
                     </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -160,10 +148,6 @@
                             </mat-card-header>
                         </mat-card>
                     </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -199,7 +183,7 @@
                 <button mat-raised-button matStepperPrevious color="primary">Back</button>
             </div>
             <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
+                <mat-grid-list gutterSize="20px" [cols]="isHandSet || isTablet ? 1 : 2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1" class="customise-grid">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -226,10 +210,6 @@
                             </mat-card-header>
                         </mat-card>
                     </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1">
                         <mat-card class="custom-cards">
                             <mat-card-header>
@@ -256,10 +236,6 @@
                             </mat-card-header>
                         </mat-card>
                     </mat-grid-tile>
-                </mat-grid-list>
-            </div>
-            <div class="row">
-                <mat-grid-list cols="2" rowHeight="100px">
                     <mat-grid-tile [colspan]="1" [rowspan]="1">
                         <mat-card class="custom-cards">
                             <mat-card-header>
